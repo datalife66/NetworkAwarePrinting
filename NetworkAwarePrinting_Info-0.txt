@@ -1,0 +1,60 @@
+NetworkAwarePrinting-By DataLife
+1.9
+1934 F0D15234E717611F68107390F00D8438
+1934 F0D15234E717611F68107390F00D8438
+https://onedrive.live.com/download?cid=AAA3D82D7A15CDC5&resid=AAA3D82D7A15CDC5%2134090&authkey=AFL86KV-1hlVr1k
+https://onedrive.live.com/download?cid=AAA3D82D7A15CDC5&resid=AAA3D82D7A15CDC5%2134090&authkey=AFL86KV-1hlVr1k
+Version 1.0 - Initial Public Release
+
+Version 2.0 - Minor Update
+1) Fix issue with not changing default printer when exiting the Manage Default Printer dialog screen.
+2) Added "Do nothing at this time" when prompted to select a default printer for a new network connection.
+
+Verison 3.0 - Minor Update
+1) Added the option to buy a license by going to http://NetworkAwarePrinting.com in addition to paypal.
+
+Version 3.1 - Minor Update
+1) Added code to change the default printer on program start up.
+
+Version 3.2 - Minor Update
+1) Recoded "detecting new network" to be more reliable and use less resources (specifically less file reads)
+2) Fixed issue with program updating
+
+Version 3.3 - Minor Update
+1) Fixed an issue that would cause a "catastrophic failure" error
+
+Version 3.4 - Minor Update
+1) Fixed an issue when the default printer remembered by Network Aware Printing was no longer installed in Windows.
+2) Put in check to see if the folder the Network Aware Printing is located in is a writable folder
+3) Put in checks for non English Locale
+4) Fixed an issue where a double click on the system tray icon caused an error.
+5) Fixed an issue where the network/printer configuration was lost when clicking "Ok" before the listview was finished populating on the "Network Aware Printing Menu"
+
+Version 3.5 - Minor Update
+1) Fixed a display issue when using the Volume License registration method
+2) Added feature to not prompt when a new network was found without a valid printer.
+3) Found an issue when Network Aware Printing would pop up the window to choose a printer when a printer had already been chosen for that network
+
+Version 3.6 - Minor Update
+1) Fixed an issue with the temporary printer list being created in the current folder then the program looking for the list in windows temporary folder.
+
+Version 3.7 - Minor Update
+1) Added ability to filter the network and printer dropdown lists on the "Manage Default Printers" configuration page
+2) Now able to choose more then 1 network to "Do nothing at this time" (Resets on program start up) on the "Invalid Default Printer!" notification screen.
+3) Added All Other Networks, if the new network does not have a printer assigned to it a printer of the users choice will be assigned.
+4) Added Help section to the system tray icon right click menu
+
+Version 3.8 - Minor Update
+1) Added option to detect Networks via Ip Address
+2) Added "Do not show this again" option to the "Unsupported Language" message popup so that it will not be shown every time Network Aware Printing is started.
+3) Added option to be notified when the default printer has been changed.
+4) All networks are now stored in and retrieved from a text file instead of retrieving the list from Windows each time it is needed.
+5) Fixed an issue with invalid message being displayed when clicking on Save on the "Manage Default Printers" configuration page.
+
+Version 3.9 - Minor Update
+1) Removed "About" and added "Help" to the "Manage Default Printers" configuration page
+2) Moved "Do not notify me of an invalid printer for any networks" to be a part of the other 3 options on the notification message that the current network does not have a valid default printer
+3) Fixed an issue on the "Manage Default Printers" configuration page where it would occasionally show connected to the wrong network.
+4) Added code to ignore Hyper-v virtual network connections
+Note:
+5) Added code to detect when the Print Spooler service is not running.
