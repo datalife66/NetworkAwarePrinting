@@ -1,5 +1,6 @@
 # NetworkAwarePrinting
 Version 3.9
+
 Microsoft did not include Location Aware Printing in windows 10.
 
 Network Aware Printing brings that functionality back.
