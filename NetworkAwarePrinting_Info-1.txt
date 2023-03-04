@@ -1,7 +1,7 @@
 NetworkAwarePrinting-By DataLife
-4.5
-1952 4E646AC9AA067C62A67099D9AEC1958F
-1952 4E646AC9AA067C62A67099D9AEC1958F
+4.6
+1974 AB7D599106FF1C8796E5E7FCAE1C341E
+1974 AB7D599106FF1C8796E5E7FCAE1C341E
 https://sourceforge.net/projects/networkawareprinting/files/NetworkAwarePrintingDotCom/NetworkAwarePrinting.exe/download
 https://sourceforge.net/projects/networkawareprinting/files/NetworkAwarePrintingDotCom/NetworkAwarePrinting.exe/download
 
@@ -74,5 +74,15 @@ Version 4.3 - Minor Update
 Version 4.4 - Minor Update
 1) Made Network Aware Printing Free
 Version 4.5 - Minor Update
-   Fixed issue caused by windows update breaking function to retrieve the network name.
-   Added VMware and Hyper-V Virtual to the list of adapters to exclude.
+1) Fixed issue caused by windows update breaking function to retrieve the network name.
+2) Added VMware and Hyper-V Virtual to the list of adapters to exclude.
+Version 4.6 - Minor Update
+1)  Instead of excluding virtual adapters based on name, all virtual adapters are excluded
+    when Network Settings "Detect Network by Ip Address" is chosen.
+2)  Default Printers can still be chosen for Virtual and Physical adapters if
+    "Detect Network by Name" is chosen.
+3)  Removed EULA (End User Legal Agreement)
+4)  Fixed a bug that was created in Version 3.8 when Detect Network By Ip Address was added.
+    Bug would happen when on the Network Aware Printing Menu when changing from Detect by Network Name to Detect by IP address and vice versa and then exiting the Menu without saving. 
+    Even though the Connected Network had a valid default printer assigned the program would still open the Invalid Default Printer dialog indicating the Connected Network did not have a 
+    valid printer assigned to it.

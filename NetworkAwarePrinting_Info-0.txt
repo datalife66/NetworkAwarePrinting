@@ -1,9 +1,10 @@
 NetworkAwarePrinting-By DataLife
-1.9
-1934 F0D15234E717611F68107390F00D8438
-1934 F0D15234E717611F68107390F00D8438
-https://onedrive.live.com/download?cid=AAA3D82D7A15CDC5&resid=AAA3D82D7A15CDC5%2134090&authkey=AFL86KV-1hlVr1k
-https://onedrive.live.com/download?cid=AAA3D82D7A15CDC5&resid=AAA3D82D7A15CDC5%2134090&authkey=AFL86KV-1hlVr1k
+4.6
+1974 AB7D599106FF1C8796E5E7FCAE1C341E
+1974 AB7D599106FF1C8796E5E7FCAE1C341E
+https://sourceforge.net/projects/networkawareprinting/files/NetworkAwarePrintingDotCom/NetworkAwarePrinting.exe/download
+https://sourceforge.net/projects/networkawareprinting/files/NetworkAwarePrintingDotCom/NetworkAwarePrinting.exe/download
+
 Version 1.0 - Initial Public Release
 
 Version 2.0 - Minor Update
@@ -56,5 +57,32 @@ Version 3.9 - Minor Update
 2) Moved "Do not notify me of an invalid printer for any networks" to be a part of the other 3 options on the notification message that the current network does not have a valid default printer
 3) Fixed an issue on the "Manage Default Printers" configuration page where it would occasionally show connected to the wrong network.
 4) Added code to ignore Hyper-v virtual network connections
-Note:
 5) Added code to detect when the Print Spooler service is not running.
+
+Version 4.0 - Minor Update
+1) Fixed Registration Issue
+2) Fixed Blank Printer Dropdown List in "All Other Networks"
+
+Version 4.1 - Minor Update
+1) Added full path to wmic.exe to fix issue when wmic.exe is not in the system path
+Version 4.2 - Minor Update
+1) Fixed issue where a Windows update added TAP-Windows Adapters as a connected network. This caused Network Aware Printing to detect TAP-Windows Adapters instead of the correct connected network adapter.
+2) If Chrome does not use the windows default printer you can find the solution here....
+   https://admx.help/?Category=Chrome&Policy=Google.Policies.Chrome::PrintPreviewUseSystemDefaultPrinter
+Version 4.3 - Minor Update
+1) Added full path to wmic.exe to fix issue when wmic.exe is not in the system path that was missed in Version 4.1
+Version 4.4 - Minor Update
+1) Made Network Aware Printing Free
+Version 4.5 - Minor Update
+1) Fixed issue caused by windows update breaking function to retrieve the network name.
+2) Added VMware and Hyper-V Virtual to the list of adapters to exclude.
+Version 4.6 - Minor Update
+1)  Instead of excluding virtual adapters based on name, all virtual adapters are excluded
+    when Network Settings "Detect Network by Ip Address" is chosen.
+2)  Default Printers can still be chosen for Virtual and Physical adapters if
+    "Detect Network by Name" is chosen.
+3)  Removed EULA (End User Legal Agreement)
+4)  Fixed a bug that was created in Version 3.8 when Detect Network By Ip Address was added.
+    Bug would happen when on the Network Aware Printing Menu when changing from Detect by Network Name to Detect by IP address and vice versa and then exiting the Menu without saving. 
+    Even though the Connected Network had a valid default printer assigned the program would still open the Invalid Default Printer dialog indicating the Connected Network did not have a 
+    valid printer assigned to it.
