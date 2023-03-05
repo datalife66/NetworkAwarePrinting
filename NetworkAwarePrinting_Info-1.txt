@@ -65,17 +65,22 @@ Version 4.0 - Minor Update
 
 Version 4.1 - Minor Update
 1) Added full path to wmic.exe to fix issue when wmic.exe is not in the system path
+
 Version 4.2 - Minor Update
 1) Fixed issue where a Windows update added TAP-Windows Adapters as a connected network. This caused Network Aware Printing to detect TAP-Windows Adapters instead of the correct connected network adapter.
 2) If Chrome does not use the windows default printer you can find the solution here....
    https://admx.help/?Category=Chrome&Policy=Google.Policies.Chrome::PrintPreviewUseSystemDefaultPrinter
+
 Version 4.3 - Minor Update
 1) Added full path to wmic.exe to fix issue when wmic.exe is not in the system path that was missed in Version 4.1
+
 Version 4.4 - Minor Update
 1) Made Network Aware Printing Free
+
 Version 4.5 - Minor Update
 1) Fixed issue caused by windows update breaking function to retrieve the network name.
 2) Added VMware and Hyper-V Virtual to the list of adapters to exclude.
+
 Version 4.6 - Minor Update
 1)  Instead of excluding virtual adapters based on name, all virtual adapters are excluded
     when Network Settings "Detect Network by Ip Address" is chosen.
